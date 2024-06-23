@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="mainWrap">
+    <div class="menu">
+        <ul class="menuList">
+            <li class="listElement" onmouseenter=hoverHome() onclick=clickHome() onmouseleave=leaveHome() >Home</li>
+            <li class="listElement" onmouseenter=hoverAbout() onclick=clickAbout() onmouseleave=leaveAbout() >About</li>
+            <li class="listElement" onmouseenter=hoverContact() onclick=hoverClick() onmouseleave=hoverLeave()>Contact</li>
+            <li class="listElement" onmouseenter=hoverCV() onclick=CVClick() onmouseleave=CVLeave()>CV</li>
+        </ul>
+
+
+    </div>
+    <div class="left inside" id="insideLeft">
+        <h1 class="insideText header1">Personal Website</h1>
+        <p class="insideText paragraph" id="insideLeftTextParagraph">Welcome to Mihail Naskov's personal website!
+        </p>
+        <img src="insta.jpg" class="contactSlika" id="prva" onclick=odnesiInstagram()><img src="facebook.png" class="contactSlika" id="vtora" onclick=odnesiFacebook()><img src="gmail.png" class="contactSlika" id="treta" onclick=odnesiGmail()>
+        <a href="CV.pdf" id="CVText">CV LINK</a>
+    </div>
+
+    <div class="right inside" id="insideRight">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Vinica,%20Macedonia+(My%20hometown)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" id="mapata"></iframe>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
